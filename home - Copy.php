@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Home Page</title>
+<style>
+.menubar{
+	background-color:#40868b;
+	padding:1% 7%;
+	text-align: center;
+	}
+.menubar a{
+	color:white;
+	text-decoration:none;
+	font-size:15px;
+	padding:10px 20px;
+	cursor:pointer;
+    }	
+.welcome{
+	background-color:#F0B27A;
+	padding:1% 7%;
+	text-align: center;
+        }
+
+</style>
+</head>
+
+<body bgcolor="#A6ACAF">
+
+<div class="menubar">
+
+<a href="home.php">Home</a>
+<a href="registration.php">Registration</a>
+<a href="login.php">Login</a>
+<a href="employer.php">Employer</a>
+<a href="admin.php">Admin</a>
+<a href="JobSeeker.php">JobSeeker</a>
+<a href="news.php">News</a>
+<a href="AboutUs.php">About Us</a>
+<a href="ContactUs.php">Contact Us</a>
+
+
+</div>
+<div class="welcome">
+<font align="middle" color="Black" size="5px"><b> WELCOME JOB PORTAL SYSTEM </b></font>
+</div>
+</body>
+</html>
