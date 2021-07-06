@@ -45,8 +45,8 @@ session_start();
 </div>
 <div class="welcome">
  
-<!--<font align="middle" color="Black" size="5px"><b> WELCOME IN JOB PORTAL SYSTEM </b> </font> -->
-<h1 align="center">WELCOME <?php echo $_SESSION["loggeduser"];?> IN JOB PORTAL SYSTEM</h1>
+ 
+<h1 align="center">WELCOME TO <?php echo $_SESSION["loggeduser"];?> IN OUR JOB PORTAL SYSTEM</h1>
 
 </div>
 <p>

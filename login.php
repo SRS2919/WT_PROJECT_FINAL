@@ -4,8 +4,9 @@ session_start();
 $err_username="";
 $password="";
 $err_password="";
- 
-$users =array("saiful"=>"1234","shohan"=>"5678","sanjida"=>"7364"); 
+
+$users =array("saiful"=>"1234","shohan"=>"5678","SANJIDA"=>"7364"); 
+
 $hasError=false;
  
 if($_SERVER["REQUEST_METHOD"]=="POST")
@@ -49,7 +50,7 @@ foreach($users as $u=>$p)
 {
 	if($username == $u && $password ==$p)
 	{
-		$_SESSION["$loggeduser"] = $users;
+		$_SESSION["loggeduser"] = $username;
 		header("Location: home.php");
 	}
 	echo "Invalid Username or password";

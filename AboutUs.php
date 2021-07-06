@@ -182,7 +182,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 if(!$hasError)
 {
 echo $_POST["name"]."<br>";	
-echo $_POST["password"]."<br>";	
+ 
 echo $_POST["email"]."<br>";	
 echo $_POST["code"]."<br>";	
 echo $_POST["number"]."<br>";	
@@ -265,6 +265,9 @@ echo $_POST["com"]."<br>";
                     <td>: <input type="text" name="com">
 					<span style="color:red"><?php echo $err_com; ?></span>
 					</td>
+					</tr>
+					<tr>
+					<td><input type="Submit"></td>
 					</tr>
 			  
 
