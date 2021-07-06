@@ -1,5 +1,10 @@
  <?php
-session_start();
+//session_start();
+//if(!isset( $_SESSION["loggeduser"]))
+	if(!isset( $_COOKIE["loggeduser"]))
+{
+	header("location:login.php");
+}
 
 ?>
 <html>
@@ -46,7 +51,8 @@ session_start();
 <div class="welcome">
  
  
-<h1 align="center">WELCOME TO <?php echo $_SESSION["loggeduser"];?> IN OUR JOB PORTAL SYSTEM</h1>
+<!-- <h1 align="center">WELCOME TO <?php echo $_SESSION["loggeduser"];?> IN OUR JOB PORTAL SYSTEM</h1>   -->
+<h1 align="center">WELCOME TO <?php echo $_COOKIE["loggeduser"];?> IN OUR JOB PORTAL SYSTEM</h1>
 
 </div>
 <p>

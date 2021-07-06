@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
  $username="";
 $err_username="";
 $password="";
@@ -50,7 +50,8 @@ foreach($users as $u=>$p)
 {
 	if($username == $u && $password ==$p)
 	{
-		$_SESSION["loggeduser"] = $username;
+		//$_SESSION["loggeduser"] = $username;
+		setcookie("loggeduser",$username,time()+5);
 		header("Location: home.php");
 	}
 	echo "Invalid Username or password";
