@@ -7,7 +7,7 @@
 		
 if(isset($_POST["add_category"])){
 		//name
-		if(empty($_POST["name"])){
+		/*if(empty($_POST["name"])){
 			$hasError = true;
 			$err_name="Name Required";
 		}
@@ -17,12 +17,20 @@ if(isset($_POST["add_category"])){
 	
 		}
 		if(!$hasError){
-			$rs=insertCategory($name);
+			$rs=insertCategory($_POST["name"]);
 			if($rs===true){
 				header("Location: allcategories.php");
 			}
 			$err_db=$rs;
 		}
+		*/
+		
+		$rs=insertCategory($_POST["name"]);
+			if($rs===true){
+				header("Location: allcategories.php");
+			}
+			$err_db=$rs;
+		
 		}
 		
 		

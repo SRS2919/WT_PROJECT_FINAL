@@ -1,8 +1,8 @@
 <?php
     include 'header.php';
     include 'controllers/CategoryController.php';
-	$id=$_GET["id"];
-	$c=getCategory($id);
+	//$id=$_GET["id"];
+	//$c=getCategory($id);
     
 ?>
 <html>
@@ -15,13 +15,13 @@
 			<td>  <b>Edit Catagory </b></td>
 				<tr>
 					<td>Name</td>
-					<td>: <input type="text" name="name" value="<?php echo $c["name"]; ?>" > </td>
-					<td><span> <?php echo $err_name;?> </span></td>
+					<td>: <input type="text" name="name" > </td>
+					 
 				</tr>
 				
 				
 				<tr>
-					<td colspan="2" align="right"> <input type="submit" name="edit_category" value="Edit Catagory"> </td>
+					<td> <input type="submit" name="edit_category" value="Edit Catagory"> </td>
 					
 				</tr>
 				</table>

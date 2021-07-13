@@ -15,7 +15,7 @@
 				<tr>
 					<td>Name</td>
 					<td>: <input type="text" name="name" value="<?php echo $name; ?>" > </td>
-					<td><span> <?php echo $err_name;?> </span></td>
+					<!--<td><span> <?php echo $err_name;?> </span></td>-->
 				</tr>
 				
 				
