@@ -1,8 +1,8 @@
 <?php
     include 'header.php';
     include 'controllers/CategoryController.php';
-	//$id=$_GET["id"];
-	//$c=getCategory($id);
+	$id=$_GET["id"];
+	$c=getCategory($id);
     
 ?>
 <html>
@@ -12,10 +12,11 @@
 		<form  method="post" action="">
 		<fieldset>
 			<table>
+			<td><input type="hidden" name="id" value="<?php echo $c["name"]; ?>"></td>
 			<td>  <b>Edit Catagory </b></td>
 				<tr>
 					<td>Name</td>
-					<td>: <input type="text" name="name" > </td>
+					<td>: <input type="text" name="name" value="<?php echo $c["name"]; ?>" > </td>
 					 
 				</tr>
 				
