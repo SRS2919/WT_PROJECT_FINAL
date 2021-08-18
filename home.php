@@ -36,16 +36,12 @@
 
 <div class="menubar">
 
-<a href="home.php">Home</a>
-<a href="registration.php">Registration</a>
+<a href="login.php">Login</a>
  
-<a href="employer.php">Employer</a>
-<a href="admin.php">Admin</a>
-<a href="JobSeeker.php">JobSeeker</a>
-<a href="news.php">News</a>
-<a href="AboutUs.php">About Us</a>
-<a href="ContactUs.php">Contact Us</a>
 
+<div class="logo">
+<img src="storage/jobmainlogo.PNG" height="150px" width="100px">
+</div>
 
 </div>
 <div class="welcome">
